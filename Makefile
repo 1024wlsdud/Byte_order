@@ -1,10 +1,10 @@
-all: Byte_order
 
-Byte_order: main.o
-	g++ -o Byte_order main.o
 
-main.o: main.cpp
+add-nbo: main.o
+	g++ -o add-nbo main.o
+
+main.o: main.c
 
 clean:
-	rm -f Byte_order
+	rm -f add-nbo
 	rm -f *.o
